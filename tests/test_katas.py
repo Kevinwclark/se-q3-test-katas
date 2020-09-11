@@ -3,7 +3,7 @@ import katas
 import random
 
 
-__author__ = 'Kevin Clark'
+__author__ = 'Kevin Clark with help from Joseph Hafed and Daniel Lomelino'
 
 
 class TestKatas(unittest.TestCase):
