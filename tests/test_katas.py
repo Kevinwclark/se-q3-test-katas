@@ -7,6 +7,7 @@ __author__ = 'Kevin Clark with help from Joseph Hafed and Daniel Lomelino'
 
 
 class TestKatas(unittest.TestCase):
+    """tests the add function"""
     def test_add(self):
         x = random.randrange(-10, 10)
         y = random.randrange(-10, 10)
@@ -14,12 +15,14 @@ class TestKatas(unittest.TestCase):
         self.assertEqual(katas.add(x, y), s)
 
     def test_multiply(self):
+        """tests the multiply function"""
         x = random.randrange(-10, 10)
         y = random.randrange(-10, 10)
         s = x * y
         self.assertEqual(katas.multiply(x, y), s)
 
     def test_power(self):
+        """tests the power function"""
         self.assertEqual(katas.power(2, 2), 4)
         with self.assertRaises(ValueError):
             katas.power(2, -1)
@@ -27,6 +30,7 @@ class TestKatas(unittest.TestCase):
             katas.power(2, 0.2)
 
     def test_factorial(self):
+        """tests the factorial function"""
         terms = [
             1, 2, 6, 24, 120, 720, 5040, 40320, 362880, 3628800, 39916800,
             479001600, 6227020800, 87178291200, 1307674368000
@@ -37,6 +41,7 @@ class TestKatas(unittest.TestCase):
             katas.factorial(-3)
 
     def test_fibonacci(self):
+        """tests the fibonacci function"""
         terms = [
             0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89,
             144, 233, 377, 610, 987, 1597, 2584, 4181,
